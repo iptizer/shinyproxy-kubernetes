@@ -76,8 +76,8 @@ data:
       specs:
       - id: shinyapp
         description: Shiny Application
-				xxx: xxx
-				container-env:
+        xxx: xxx
+        container-env:
           http_proxy: "http://your.proxy"
           https_proxy: "http://your.proxy"
 ---
