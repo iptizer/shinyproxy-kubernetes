@@ -2,7 +2,7 @@
 
 Docker image for shinyproxy ment to be used with kubernetes.
 
-Most of the work is just picked from [this GitHub repository.](https://github.com/openanalytics/shinyproxy-config-examples/tree/master/03-containerized-kubernetes) This container is to enable customization in more geneal way.
+Most of the work is just picked from [this GitHub repository.](https://github.com/openanalytics/shinyproxy-config-examples/tree/master/03-containerized-kubernetes) This container is to enable customization in more general way.
 
 ## Using a proxy
 
@@ -76,7 +76,10 @@ data:
       specs:
       - id: shinyapp
         description: Shiny Application
-				[...]
+				xxx: xxx
+				container-env:
+          http_proxy: "http://your.proxy"
+          https_proxy: "http://your.proxy"
 ---
 apiVersion: apps/v1
 kind: Deployment
